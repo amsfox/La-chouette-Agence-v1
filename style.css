@@ -825,6 +825,11 @@ h4 {
     background-image: url("img/image-de-presentation.bmp");
 }
 
+
+#email:not(:focus):invalid {
+    color: red;
+}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
