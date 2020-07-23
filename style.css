@@ -18,6 +18,10 @@ a:hover {
     cursor: pointer;
 }
 
+.linkAnim:hover {
+    transform: scaleX(1.2);
+}
+
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
@@ -823,6 +827,8 @@ h4 {
 #email:not(:focus):invalid {
     color: red;
 }
+
+
 
 @media (max-width: 1024px) {
     .bloc {
