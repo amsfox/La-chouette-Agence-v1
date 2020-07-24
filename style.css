@@ -18,8 +18,19 @@ a:hover {
     cursor: pointer;
 }
 
-.linkAnim:hover {
-    transform: scaleX(1.2);
+.linkAnim::after {
+    content: "";
+    display: block;
+    border: 0.5px black solid;
+    background-color:black;
+    transform: scale(0);
+    transform-origin: left;
+    transition: 500ms;
+}
+
+.linkAnim:hover::after {
+    transform: scaleX(1);
+    
 }
 
 #page-loading-blocs-notifaction {
@@ -777,15 +788,15 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #8F5740;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #8F5740!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #8F5740;
     color: #FFFFFF!important;
 }
 
@@ -803,7 +814,7 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #8F5740!important;
 }
 
 .ltc-atomic-tangerine:hover {
@@ -823,10 +834,11 @@ h4 {
     background-image: url("img/image-de-presentation.jpg");
 }
 
-
 #email:not(:focus):invalid {
     color: red;
 }
+
+
 
 
 

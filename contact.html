@@ -46,36 +46,31 @@
 <div class="page-container">
     
 <!-- bloc-0 -->
-<div class="bloc bgc-white l-bloc " id="bloc-0">
-	<div class="container bloc-sm">
+<header>
+	<div class="bloc bgc-white l-bloc " id="bloc-0">
+		<div class="container bloc-sm">
 
-		<nav class="navbar row">
-			<div class="navbar-header">
-				<!-- *** Eviter d'ecrire des mots clés en blanc pour tromper Google et eviter de mettre les codes style css dans le html-->
-				<!--<div class="keywords" style="color:red;font-size:15px;">Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site</div> -->
-				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="logo la chouette agence" height="40" /></a>
-				<!-- *** Eviter d'ecrire des mots clés en blanc pour tromper Google et eviter de mettre les codes style css dans le html-->
-				<!--<div class="keywords" style="color:blue;font-size:15px;">Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site</div> -->
-				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-				<ul class="site-navigation nav navbar-nav">
-					<li>
-						<a href="index.html">Accueil</a>
-					</li>
-					<!-- *** supprimer les lignes qui ne servent à rien << li-->
-					<li>
-						<!-- *** renommer le lien page2 en contact-->
-						<a href="contact.html">Contact</a>
-						<!-- *** supprimer le ""-->
-					</li>
-				</ul>
-			</div>
-		</nav>
+			<nav class="navbar row">
+				<div class="navbar-header">
+					<a class="navbar-brand linkAnim" href="index.html"><img src="img/la-chouette-agence.png" alt="logo la chouette agence" height="40" /></a>
+					<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+						<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+					<ul class="site-navigation nav navbar-nav">
+						<li>
+							<a class="linkAnim" href="index.html">Accueil</a>
+						</li>
+						<li>
+							<a class="linkAnim" href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
 	</div>
-</div>
+</header>
 <!-- bloc-0 END -->
 
 <!-- bloc-6 -->
@@ -98,54 +93,57 @@
 <!-- bloc-6 END -->
 
 <!-- bloc-7 -->
-<div class="bloc bgc-white l-bloc" id="bloc-7">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-6">
-				<form id="form_1">
-					<div class="form-group">
-						<label>
-							Nom
-						</label><br/>
-						<input id="name" class="form-control" required />
-					</div>
-					<div class="form-group">
-						<label>
-							Adresse email
-						</label><br/>
-						<input id="email" class="form-control" type="email" required />
-					</div>
-					<div class="form-group">
-						<label>
-							Comment nous avez-vous connu ?
-						</label><br/>
-						<select>
-							<option value="">Moteur de recherche sur internet</option>
-							<option value="">Publicité de PPC</option>
-							<option value="">Publicité à la radio</option>
-							<option value="">Publicité à la télé</option>
-							<option value="">Sur les réseaux sociaux</option>
-							<option value="">Autres</option>
-						</select>
-					</div>
-					<div class="form-group">
-						<label>
-							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="60" required></textarea>
-					</div> 
-					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
-						Envoyer
-					</button>
-				</form>
-			</div>
-			<div class="col-sm-6">
-				<p>
-					<strong><a href="mailto:contact@lachouetteagence.com">contact@lachouetteagence.com</a></strong><br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
-				</p>
+<main>
+	<section class="bloc bgc-white l-bloc" id="bloc-7">
+		<div class="container bloc-lg">
+			<div class="row">
+				<div class="col-sm-6">
+					<form id="form_1">
+						<div class="form-group">
+							<label>
+								Nom
+							</label><br/>
+							<input id="name" class="form-control" required />
+						</div>
+						<div class="form-group">
+							<label>
+								Adresse email
+							</label><br/>
+							<input id="email" class="form-control" type="email" required />
+							<p><strong>Veuillez rentrer une adresse mail valide (xxx@mail.com)</strong></p>
+						</div>
+						<div class="form-group">
+							<label>
+								Comment nous avez-vous connu ?
+							</label><br/>
+							<select>
+								<option value="">Moteur de recherche sur internet</option>
+								<option value="">Publicité de PPC</option>
+								<option value="">Publicité à la radio</option>
+								<option value="">Publicité à la télé</option>
+								<option value="">Sur les réseaux sociaux</option>
+								<option value="">Autres</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label>
+								Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
+							</label><textarea id="message" class="form-control" rows="4" cols="60" required></textarea>
+						</div> 
+						<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
+							Envoyer
+						</button>
+					</form>
+				</div>
+				<div class="col-sm-6">
+					<p>
+						<a class="bold-link" href="mailto:contact@lachouetteagence.com">contact@lachouetteagence.com</a><br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
+					</p>
+				</div>
 			</div>
 		</div>
-	</div>
-</div>
+	</section>
+</main>
 <!-- bloc-7 END -->
 
 <!-- ScrollToTop Button -->
@@ -154,7 +152,7 @@
 
 
 <!-- Footer - bloc-8 -->
-<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
@@ -186,7 +184,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</footer>
 <!-- Footer - bloc-8 END -->
 
 </div>
