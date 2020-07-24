@@ -838,9 +838,14 @@ h4 {
     color: red;
 }
 
+.d-bloc a .icon-md {
+    color: white;
+}
 
-
-
+.d-bloc a:hover .icon-md {
+    color: rgb(80, 80, 194);
+    transition: 300ms ease-in-out;
+}
 
 @media (max-width: 1024px) {
     .bloc {
