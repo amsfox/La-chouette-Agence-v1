@@ -843,7 +843,7 @@ h4 {
 }
 
 .d-bloc a:hover .icon-md {
-    color: rgb(80, 80, 194);
+    color: #1196F5;
     transition: 300ms ease-in-out;
 }
 
